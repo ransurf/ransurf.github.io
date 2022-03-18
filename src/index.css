@@ -28,3 +28,12 @@ code {
 .home-name {
   font-size: 100px;
 }
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+  background-color: rgba(29,29,31,0.72);
+  position: relative;
+}

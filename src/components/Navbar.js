@@ -6,7 +6,7 @@ function Navbar() {
   //check if path is programming or not
 
   return (
-    <header className="bg-night-100">
+    <header className="bg-night-100 header">
       <div className="container mx-auto flex justify-between">
         <nav>
           <NavLink
@@ -19,20 +19,20 @@ function Navbar() {
           <NavLink
             exact
             to={"/about"}
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300 text-code-thin"
           >
             About
           </NavLink>
           <NavLink
             to="/programming"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300 text-code-thin"
             activeClassName="text-purple-400 bg-purple-700"
           >
             Programming
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300 text-code-thin"
             activeClassName="text-purple-400 bg-purple-700"
           >
             Blog
