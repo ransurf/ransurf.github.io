@@ -1,5 +1,6 @@
 {
   "name": "personalwebsite",
+  "homepage": "https://ransurf.github.io",
   "private": true,
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)",
@@ -8,7 +9,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
-    "build": "sanity build"
+    "build": "sanity build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "sanity"
