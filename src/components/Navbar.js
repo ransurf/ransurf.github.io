@@ -24,16 +24,14 @@ function Navbar() {
             About
           </NavLink>
           <NavLink
-            to="/programming"
+            to="/projects"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300 text-code-thin"
-            activeClassName="text-purple-400 bg-purple-700"
           >
-            Programming
+            Projects
           </NavLink>
           <NavLink
             to="/post"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-purple-300 text-code-thin"
-            activeClassName="text-purple-400 bg-purple-700"
           >
             Blog
           </NavLink>
