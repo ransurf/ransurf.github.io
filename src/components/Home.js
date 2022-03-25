@@ -8,7 +8,7 @@ function Home() {
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
-  const [words, setWords] = useState(['Programmer', 'YouTuber', 'Student', 'Designer']);
+  const [words, setWords] = useState(['YouTuber', 'Student', 'Gamer', 'Reader', 'Developer']);
 
   // typeWriter, source from https://levelup.gitconnected.com/typing-effect-in-react-56697def0473
   useEffect(() => {

@@ -29,7 +29,7 @@ function Post() {
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center text-code text-white">Blog Posts</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12 text-white text-code mt-1">
-          A collection of my thoughts and experiences !
+          A collection of my thoughts and experiences!
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
@@ -37,7 +37,7 @@ function Post() {
               <article>
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
-                    className="block h-64 relative rounded shadow leading-snug border-purple-400"
+                    className="block h-64 relative rounded shadow leading-snug border-purple-400 grow"
                     key={index}
                   >
                     <img
