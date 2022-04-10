@@ -25,8 +25,10 @@ function About() {
     .catch((err) => console.log(err))
   }, [])
 
-  if (!author) return <div>Loading...</div>
-
+  if (!author) return <div>
+    <img src={bgImage} alt="Outrun background" className="imgDarken absolute w-full"/>
+    <p>Loading..</p>
+    </div>
   return (
     <main className="relative">
       <img src={bgImage} alt="Outrun background" className="imgDarken absolute w-full"/>
