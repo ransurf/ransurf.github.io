@@ -25,13 +25,13 @@ function Post() {
   });
 
   return (
-    <main className="bg-night-200 min-h-screen p-12">
+    <main className="bg-night-200 min-h-screen p-4 sm:p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center text-code text-white">Blog Posts</h1>
+        <h1 className="text-5xl text-code text-white">Blog Posts</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12 text-white text-code mt-1">
           A collection of my thoughts and experiences!
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {postData &&
             postData.map((post, index) => (
               <article>

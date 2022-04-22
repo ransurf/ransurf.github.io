@@ -30,18 +30,18 @@ function About() {
     <p>Loading..</p>
     </div>
   return (
-    <main className="relative">
-      <img src={bgImage} alt="Outrun background" className="imgDarken absolute w-full"/>
+    <main className="relative bg-night-200">
+      <img src={bgImage} alt="Outrun background" className="absolute object-fill w-0 sm:w-full h-full"/>
       <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-night-100 rounded-lg shadow-2xl lg:flex p-20">
-          <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-80 mr-12" alt={author.name}/>
+        <section className="bg-night-100 rounded-lg shadow-2xl lg:flex p-4 sm:p-20">
+          <img src={urlFor(author.authorImage).url()} className="rounded w-50 h-50 sm:w-50 sm:w-64 sm:h-80 mr-0 sm:mr-12 self-center" alt={author.name}/>
           <div className="text-lg flex flex-col justify-center text-white">
-            <h1 className="text-code text-6xl mb-4 ">
+            <h1 className="text-code text-l sm:text-6xl  mb-4 py-4 sm:py-0">
               Howdy! I'm {" "} 
               <span>{author.name}.</span>
             </h1>
             <div className="prose text-white"></div>
-                <BlockContent blocks={author.bio} projectId="rbuymwld" dataset="production" />
+                <BlockContent className="text-sm sm:text-lg" blocks={author.bio} projectId="rbuymwld" dataset="production" />
           </div>
         </section>
       </div>

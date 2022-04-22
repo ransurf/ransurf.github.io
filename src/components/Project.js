@@ -21,14 +21,14 @@ function Project() {
     });
     return (
         // create a group of buttons to filter the projects by type (personal, hackathon, school, client, etc)
-        <main className="bg-night-200 min-h-screen p-12" >
+        <main className="bg-night-200 min-h-screen p-4 sm:p-12" >
             <section className="container mx-auto ">
                 <h1 className="text-5xl flex justify-center text-code text-white">Projects</h1>
                 <h2 className="text-lg flex justify-center mb-12 text-white text-code mt-1">
                     A collection of my projects!
                 </h2>
                 
-                <section className="grid grid-cols-2 gap-8">
+                <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) => (
                     <article key={index} className="relative rounded-lg shadow-xl bg-night-100 p-8 space-8 text-white grow">
                         <span>

@@ -53,11 +53,11 @@ function Home() {
         alt="background"
         className="absolute object-cover w-full h-full"
       />
-      <section className="relative flex flex-col min-h-screen  md:pt-64 lg:pt-90 px-8">
-        <h1 className="text-6l text-white font-bold text-code lg:leading-snug home-name self-center">
+      <section className="relative flex flex-col min-h-screen  md:pt-64 lg:pt-90 py-60 align-center">
+        <h1 className="text-4xl sm:text-8xl text-white font-bold text-code lg:leading-snug home-name self-center">
           John Mavrick
         </h1>
-        <h2 className="text-[30px] text-white text-code-thin lg:leading-snug self-center ">
+        <h2 className="text-md sm:text-xl text-white text-code-thin lg:leading-snug self-center ">
           I am a {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
         </h2>
       </section>

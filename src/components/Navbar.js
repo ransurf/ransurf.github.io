@@ -7,12 +7,12 @@ function Navbar() {
 
   return (
     <header className="bg-night-100 header">
-      <div className="container mx-auto flex justify-between">
-        <nav className="my-0">
+      <div className=" overflow-auto container mx-auto flex justify-between">
+        <nav className="my-0 relative mx-auto flex gap-3 sm:gap-10">
           <NavLink
             to="/"
             exact
-            className="inflex-flex items-center py-3 px-3 mr-4 text-white hover:text-purple-300 font-bold text-code tracking-widest"
+            className="inline-flex items-center py-6 px-3 mr-4 text-white hover:text-purple-300 font-bold text-code tracking-widest"
 
           >
             John Mavrick
@@ -20,21 +20,21 @@ function Navbar() {
           <NavLink
             exact
             to={"/about"}
-            className="inline-flex items-center py-3 px-3 my-3 rounded text-white hover:text-purple-300 text-code-thin grow-10"
+            className="inline-flex items-center  my-3 rounded text-white hover:text-purple-300 text-code-thin grow-10"
             style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })}
           >
             About
           </NavLink>
           <NavLink
             to="/projects"
-            className="inline-flex items-center py-3 px-3 my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
+            className="inline-flex items-center  my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
             style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })}
           >
             Projects
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
+            className="inline-flex items-center  my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
             style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })}
           >
             Blog
@@ -43,7 +43,7 @@ function Navbar() {
             href="https://ransurf.github.io/quartz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center py-3 px-3 my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
+            className="inline-flex items-center  my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
           >
             Notes
           </a>
@@ -51,12 +51,12 @@ function Navbar() {
             href="https://ko-fi.com/johnmavrick/shop"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center py-3 px-3 my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
+            className="inline-flex items-center  my-0 rounded text-white hover:text-purple-300 text-code-thin grow-10"
           >
             Services
           </a>
         </nav>
-        <div className="inline-flex py-3 px-3 my-0 items-center">
+        <div className="inline-flex my-0 items-center ">
           <SocialIcon
             url="https://www.linkedin.com/in/john-mavrick-reyes/"
             className="mr-4 grow-10"
