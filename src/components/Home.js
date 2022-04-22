@@ -57,7 +57,7 @@ function Home() {
         <h1 className="text-4xl sm:text-8xl text-white font-bold text-code lg:leading-snug home-name self-center">
           John Mavrick
         </h1>
-        <h2 className="text-md sm:text-xl text-white text-code-thin lg:leading-snug self-center ">
+        <h2 className="text-md sm:text-4xl text-white text-code-thin lg:leading-snug self-center ">
           I am a {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
         </h2>
       </section>
