@@ -8,11 +8,11 @@ function Navbar() {
   return (
     <header className="bg-night-100 header">
       <div className=" overflow-auto container mx-auto flex justify-between">
-        <nav className="my-0 relative mx-auto flex gap-3 sm:gap-10">
+        <nav className="my-0 relative sm:container mx-auto flex gap-3 sm:gap-10">
           <NavLink
             to="/"
             exact
-            className="inline-flex items-center py-6 px-3 mr-4 text-white hover:text-purple-300 font-bold text-code tracking-widest"
+            className="inflex-flex items-center py-6 px-3 mr-4 text-white hover:text-purple-300 font-bold text-code tracking-widest "
 
           >
             John Mavrick
@@ -56,7 +56,7 @@ function Navbar() {
             Services
           </a>
         </nav>
-        <div className="inline-flex my-0 items-center ">
+        <div className="inline-flex ml-4 my-0 items-center">
           <SocialIcon
             url="https://www.linkedin.com/in/john-mavrick-reyes/"
             className="mr-4 grow-10"
