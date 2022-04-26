@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <header className="bg-night-100 header">
-      <div className=" overflow-auto container mx-auto flex justify-between">
+      <div className=" overflow-x-auto overflow-y-hidden container mx-auto flex justify-between">
         <nav className="my-0 relative sm:container mx-auto flex gap-3 sm:gap-10">
           <NavLink
             to="/"

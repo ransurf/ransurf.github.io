@@ -27,7 +27,7 @@ function Post() {
   return (
     <main className="bg-night-200 min-h-screen p-4 sm:p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl text-code text-white">Blog Posts</h1>
+        <h1 className="text-5xl flex justify-center text-code text-white">Blog Posts</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12 text-white text-code mt-1">
           A collection of my thoughts and experiences!
         </h2>

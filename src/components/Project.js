@@ -4,7 +4,7 @@ import bgImage from "../assets/bgHome.png";
 
 function Project() {
 
-
+    
     const [projectData, setProjectData] = useState(null);
     useEffect(() => {
         sanityClient.fetch(`*[_type == "project"]{
@@ -19,8 +19,11 @@ function Project() {
         .then((data) => setProjectData(data))
         .catch((err) => console.log(err))
     });
+
+
+
     return (
-        // create a group of buttons to filter the projects by type (personal, hackathon, school, client, etc)
+        
         <main className="bg-night-200 min-h-screen p-4 sm:p-12" >
             <section className="container mx-auto ">
                 <h1 className="text-5xl flex justify-center text-code text-white">Projects</h1>

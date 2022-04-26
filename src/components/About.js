@@ -26,17 +26,17 @@ function About() {
   }, [])
 
   if (!author) return <div>
-    <img src={bgImage} alt="Outrun background" className="imgDarken absolute w-full"/>
+    <img src={bgImage} alt="Outrun background" className="object-cover w-full h-full"/>
     <p>Loading..</p>
     </div>
   return (
-    <main className="relative bg-night-200">
-      <img src={bgImage} alt="Outrun background" className="absolute object-fill w-0 sm:w-full h-full"/>
+    <main className=" bg-night-200">
+      <img src={bgImage} alt="Outrun background" className="absolute object-cover w-full h-full"/>
       <div className="p-10 lg:pt-48 container mx-auto relative">
         <section className="bg-night-100 rounded-lg shadow-2xl lg:flex p-4 sm:p-20">
-          <img src={urlFor(author.authorImage).url()} className="rounded w-50 h-50 sm:w-50 sm:w-64 sm:h-80 mr-0 sm:mr-12 self-center" alt={author.name}/>
+          <img src={urlFor(author.authorImage).url()} className="rounded w-50 h-50 sm:w-50 sm:w-64 sm:h-80 mr-0 md:mr-12 self-center" alt={author.name}/>
           <div className="text-lg flex flex-col justify-center text-white">
-            <h1 className="text-code text-l sm:text-6xl  mb-4 py-4 sm:py-0">
+            <h1 className="text-code text-l sm:text-6xl  mb-4 py-4 sm:py-0 md:py-8">
               Howdy! I'm {" "} 
               <span>{author.name}.</span>
             </h1>
